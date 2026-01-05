@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  inetrone:
+    container_name: inetrone
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - inetrone
+    restart: always
+
+networks:
+  react_network:
+    driver: bridge
