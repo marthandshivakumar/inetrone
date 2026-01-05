@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   inetrone:
     container_name: inetrone
@@ -12,5 +11,5 @@ services:
     restart: always
 
 networks:
-  react_network:
+  inetrone:
     driver: bridge
